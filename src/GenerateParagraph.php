@@ -1,5 +1,7 @@
 <?php
 
+require 'GenerateTitle.php';
+
 /**
  * Created by PhpStorm.
  * User: j
@@ -31,6 +33,9 @@ class GenerateParagraph
             $paragraph = rtrim($paragraph, ".? ");
 
             array_push($subsections, $paragraph);
+
+            $title = new generateTitle();
+
             echo '<p>'.$subsections[$x].'.</p>';
         }
     }
