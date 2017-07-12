@@ -1,9 +1,4 @@
-<?php
-
-require 'src/GenerateParagraph.php';
-
-?>
-
+<?php require 'src/GenerateParagraph.php'; ?>
 <!doctype html>
 <html lang="en">
     <head>
@@ -29,15 +24,7 @@ require 'src/GenerateParagraph.php';
             </form>
         </section>
 
-        <section>
-        <?php
-
-        if (isset($_GET['validate-paragraph'])) {
-            $p = new generateParagraph($_GET['carac'], $_GET['nb_p']);
-        }
-
-        ?>
-        </section>
+        <section><?php $p = (isset($_GET['validate-paragraph'])) ? new generateParagraph($_GET['carac'], $_GET['nb_p']) : ""; ?></section>
 
         <script src="js/clipboard.min.js"></script>
         <script src="js/copy.js"></script>

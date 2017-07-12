@@ -27,5 +27,6 @@ $replicas = array(
     "TELLERS",
     "GUARDS",
     "HOSTAGES",
-    "GETAWAY"
+    "GETAWAY",
+    "Six ?"
 );
