@@ -36,7 +36,7 @@ class GenerateParagraph
 
             $title = new generateTitle();
 
-            echo '<p>'.$subsections[$x].'.</p>';
+            echo '<p id="copy-p-'.$x.'">'.$subsections[$x].'</p><button class="btn" data-clipboard-target="#copy-p-'.$x.'" data-clipboard-action="copy">Copy this text !</button>';
         }
     }
 }

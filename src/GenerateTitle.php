@@ -18,7 +18,7 @@ class GenerateTitle
             $rand = rand(0, count($replicas)-1);
             array_push($title, $replicas[$rand]);
 
-            echo '<h2>'.$title[0].'</h2>';
+            echo '<h2 id="copy-t-'.$x.'">'.$title[0].'</h2><button class="btn" data-clipboard-target="#copy-t-'.$x.'" data-clipboard-action="copy">Copy this title !</button>';
 
     }
 }
