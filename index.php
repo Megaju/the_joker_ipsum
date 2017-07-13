@@ -7,9 +7,12 @@
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>The Joker Ipsum</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <div class="back-white"></div>
+        <span class="joker">~</span>
         <header>
             <h1>The Joker Ipsum</h1>
             <div class="triangle-topleft"></div>
@@ -35,11 +38,12 @@
                 </form>
 
                 <footer>
-                    <p>Made by Julien Malle.</p>
+                    <p>Made by <a href="https://www.linkedin.com/in/julienmalle-devweb/" target="_blank">Julien Malle</a> and <a href="https://www.linkedin.com/in/emeraudecaillard/" target="_blank">Emeraude Caillard</a>.</p>
                 </footer>
             </aside>
         </div>
 
+        <script src="js/animate.css"></script>
         <script src="js/clipboard.min.js"></script>
         <script src="js/copy.js"></script>
     </body>
