@@ -22,5 +22,19 @@ $words = array(
     "Gravity all it takes is a little push.",
     "How about a magic trik ?",
     "I'm a agent of chaos.",
-    "Six ?"
+    "Six ?",
+    "I believe whatever doesn't kill you simply makes you... ...stranger.",
+    "Ha ! Ha ! Ha ! Ha ! Ha !",
+    "Oh, hee-hee, aha. Ha, ooh, hee, ha-ha, ha-ha.",
+    "And I thought my jokes were bad.",
+    "A guy lime-- Look, listen.",
+    "How about alive ? Hm ?",
+    "You wanna know how I got these scars ?",
+    "Now I'm always smiling",
+    "Very poor choice of words.",
+    "Look at me !",
+    "Oh, and every day he doesn't, people will die",
+    "I'm a man of my word.",
+    "Killing is making a choice.",
+    "I had a vision... ...of a world without Batman."
 );
