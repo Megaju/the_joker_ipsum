@@ -22,11 +22,5 @@ $replicas = array(
     "Gravity all it takes is a little push.",
     "How about a magic trik ?",
     "I'm a agent of chaos.",
-    "ALARM",
-    "VAULT",
-    "TELLERS",
-    "GUARDS",
-    "HOSTAGES",
-    "GETAWAY",
     "Six ?"
 );

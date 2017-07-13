@@ -1,0 +1,140 @@
+// colors
+$green:#58b15d;
+$pink:#b392a3;
+$blue:#3f5678;
+$grey:#484b50;
+$dark-grey:#1f2932;
+$black:#111;
+$white:#eee;
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $dark-grey;
+  color: $white;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+
+  h1, h2 {
+    color: $green;
+  }
+
+  h1, h2, p {
+    margin: 0;
+  }
+
+  p {
+    line-height: 1.3em;
+  }
+}
+
+header {
+  position: fixed;
+  top: 0;
+  height: 80px;
+  line-height: 80px;
+  margin-bottom: 60px;
+  padding-left: 30px;
+  text-transform: uppercase;
+  z-index: 1;
+
+  .triangle-topleft {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 100px solid $black;
+    border-right: 100vw solid transparent;
+    z-index: -1;
+  }
+}
+.fix-height-header {
+  height: 100px;
+  margin-bottom: 60px;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+}
+
+section {
+  width: 80%;
+  margin: 30px;
+}
+
+aside {
+  width: 20%;
+  margin: 30px;
+}
+
+button, .submit {
+  display: block;
+  margin: 15px auto;
+  padding: 5px 20px;
+  width: 220px;
+  border: 0;
+  outline: 0;
+  color: $white;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: $green;
+  transition: .1s;
+
+}
+
+button:hover, .submit:hover {
+  cursor: pointer;
+}
+
+.generated {
+  margin: 30px 0;
+  padding-bottom: 30px;
+  border-bottom: 2px solid $white;
+}
+
+form .flexbox {
+
+  div:first-child {
+    width: 70%;
+    margin-right: 30px;
+  }
+
+  div:last-child {
+    width: 30%;
+    margin: 0;
+  }
+
+  div label {
+    display: block;
+    font-size: .7em;
+  }
+
+  div input {
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 1.7em;
+    color: $white;
+    border-bottom: 1px solid $white;
+  }
+
+}
+
+.submit {
+  width: 100%;
+  font-size: 1.3em;
+}
+
+.title {
+  position: relative;
+
+  button {
+    position: absolute;
+    top: -13px;
+    right: 0;
+    margin-right: 15px;
+  }
+}

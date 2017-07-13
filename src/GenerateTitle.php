@@ -8,17 +8,16 @@
  */
 class GenerateTitle
 {
-    public function generateTitle()
+    public function generateTitle($id)
     {
         include 'replicas.php';
 
+        $title = array();
 
-            $title = array();
+        $rand = rand(0, count($replicas)-1);
+        array_push($title, $replicas[$rand]);
 
-            $rand = rand(0, count($replicas)-1);
-            array_push($title, $replicas[$rand]);
-
-            echo '<h2 id="copy-t-'.$x.'">'.$title[0].'</h2><button class="btn" data-clipboard-target="#copy-t-'.$x.'" data-clipboard-action="copy">Copy this title !</button>';
+        echo '<div class="title"><h2 id="copy-t-'.$id.'">'.$title[0].'</h2><button class="btn" data-clipboard-target="#copy-t-'.$id.'" data-clipboard-action="copy">Copy this title !</button></div>';
 
     }
 }

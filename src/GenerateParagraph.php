@@ -34,9 +34,9 @@ class GenerateParagraph
 
             array_push($subsections, $paragraph);
 
-            $title = new generateTitle();
+            $title = new generateTitle($x);
 
-            echo '<p id="copy-p-'.$x.'">'.$subsections[$x].'</p><button class="btn" data-clipboard-target="#copy-p-'.$x.'" data-clipboard-action="copy">Copy this text !</button>';
+            echo '<div class="generated"><p id="copy-p-'.$x.'">'.$subsections[$x].'.</p><button class="btn" data-clipboard-target="#copy-p-'.$x.'" data-clipboard-action="copy">Copy this text !</button></div>';
         }
     }
 }
