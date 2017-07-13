@@ -21,8 +21,9 @@ body {
   background-image: url("../images/background.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
-/* line 44, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 body .back-white {
   position: fixed;
   background-color: rgba(250, 250, 250, 0.7);
@@ -30,38 +31,38 @@ body .back-white {
   height: 100vh;
   z-index: -1;
 }
-/* line 52, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 body h1, body h2 {
   font-family: 'slave_only_dreams_to_be_kinRg', sans-serif;
 }
-/* line 56, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
 body h1, body h2, body p {
   margin: 0;
 }
-/* line 60, ../sass/style.scss */
+/* line 61, ../sass/style.scss */
 body h1 {
   font-size: 6em;
   color: #eee;
 }
-/* line 65, ../sass/style.scss */
+/* line 66, ../sass/style.scss */
 body h2 {
   font-size: 3em;
   color: #8d1b1c;
 }
-/* line 70, ../sass/style.scss */
+/* line 71, ../sass/style.scss */
 body p {
   font-size: 1.2em;
 }
-/* line 74, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 body a {
   color: #5d6584;
   text-decoration: none;
 }
-/* line 78, ../sass/style.scss */
+/* line 79, ../sass/style.scss */
 body a:hover {
   text-decoration: underline;
 }
-/* line 83, ../sass/style.scss */
+/* line 84, ../sass/style.scss */
 body .joker {
   position: absolute;
   top: 10px;
@@ -72,7 +73,7 @@ body .joker {
   z-index: 2;
 }
 
-/* line 95, ../sass/style.scss */
+/* line 96, ../sass/style.scss */
 header {
   position: fixed;
   top: 0;
@@ -82,7 +83,7 @@ header {
   text-transform: uppercase;
   z-index: 1;
 }
-/* line 104, ../sass/style.scss */
+/* line 105, ../sass/style.scss */
 header .triangle-topleft {
   position: absolute;
   top: 0;
@@ -94,50 +95,50 @@ header .triangle-topleft {
   z-index: -1;
 }
 
-/* line 117, ../sass/style.scss */
+/* line 118, ../sass/style.scss */
 .fix-height-header {
   height: 100px;
   margin-bottom: 60px;
 }
 
-/* line 122, ../sass/style.scss */
+/* line 123, ../sass/style.scss */
 .flexbox {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 127, ../sass/style.scss */
+/* line 128, ../sass/style.scss */
 section {
   width: calc(100% - 440px);
   margin: 0 30px;
 }
-/* line 131, ../sass/style.scss */
+/* line 132, ../sass/style.scss */
 section .title, section .generated {
   padding: 30px;
   background-color: rgba(250, 250, 250, 0.7);
 }
-/* line 136, ../sass/style.scss */
+/* line 137, ../sass/style.scss */
 section .title {
   position: relative;
   border-bottom: 0;
 }
-/* line 140, ../sass/style.scss */
+/* line 141, ../sass/style.scss */
 section .title:first-child {
   margin-top: 0;
 }
-/* line 144, ../sass/style.scss */
+/* line 145, ../sass/style.scss */
 section .title button {
   position: absolute;
   top: 15px;
   right: 15px;
   margin-right: 15px;
 }
-/* line 152, ../sass/style.scss */
+/* line 153, ../sass/style.scss */
 section .generated {
   margin-bottom: 30px;
 }
 
-/* line 157, ../sass/style.scss */
+/* line 158, ../sass/style.scss */
 aside {
   position: fixed;
   top: 0;
@@ -150,7 +151,7 @@ aside {
   color: #1f2932;
 }
 
-/* line 169, ../sass/style.scss */
+/* line 170, ../sass/style.scss */
 button, .submit {
   display: block;
   margin: 15px auto;
@@ -167,27 +168,27 @@ button, .submit {
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
-/* line 186, ../sass/style.scss */
+/* line 187, ../sass/style.scss */
 button:hover, .submit:hover {
   cursor: pointer;
 }
 
-/* line 192, ../sass/style.scss */
+/* line 193, ../sass/style.scss */
 form .flexbox div:first-child {
   width: 70%;
   margin-right: 30px;
 }
-/* line 197, ../sass/style.scss */
+/* line 198, ../sass/style.scss */
 form .flexbox div:last-child {
   width: 30%;
   margin: 0;
 }
-/* line 202, ../sass/style.scss */
+/* line 203, ../sass/style.scss */
 form .flexbox div label {
   display: block;
   font-size: .7em;
 }
-/* line 207, ../sass/style.scss */
+/* line 208, ../sass/style.scss */
 form .flexbox div input {
   width: 100%;
   background-color: transparent;
@@ -199,7 +200,7 @@ form .flexbox div input {
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
-/* line 220, ../sass/style.scss */
+/* line 221, ../sass/style.scss */
 .submit {
   width: 100%;
   font-size: 1.3em;
