@@ -64,7 +64,7 @@ body a:hover {
 }
 /* line 84, ../sass/style.scss */
 body .joker {
-  position: absolute;
+  position: fixed;
   top: 10px;
   right: -10px;
   color: #556f4a;
