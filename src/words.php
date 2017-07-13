@@ -6,7 +6,7 @@
  * Time: 13:52
  */
 
-$replicas = array(
+$words = array(
     "To them you're a freak like me.",
     "Why so serious ?",
     "It's simpe. We kill the Batman.",

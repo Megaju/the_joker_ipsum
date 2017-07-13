@@ -12,7 +12,7 @@ class GenerateParagraph
 {
     public function generateParagraph($limit_carac, $nb_p)
     {
-        include 'replicas.php';
+        include 'words.php';
         $subsections = array();
 
         for ($x = 0; $x < $nb_p; $x++) {
@@ -20,8 +20,8 @@ class GenerateParagraph
             $count_carac = 0;
 
             while ($count_carac < $limit_carac) {
-                $rand = rand(0, count($replicas)-1);
-                array_push($paragraph, $replicas[$rand]);
+                $rand = rand(0, count($words)-1);
+                array_push($paragraph, $words[$rand]);
                 $length = strlen(implode(",", $paragraph));
                 $count_carac = $length;
             }
