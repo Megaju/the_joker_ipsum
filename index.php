@@ -1,4 +1,9 @@
-<?php require 'src/GenerateParagraph.php'; ?>
+<?php
+
+require 'src/GenerateParagraph.php';
+require 'src/SPDO.php';
+
+?>
 <!doctype html>
 <html lang="en">
     <head>
@@ -11,6 +16,7 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+    <!-- HEADER -->
         <div class="back-white"></div>
         <span class="joker">~</span>
         <header>
@@ -18,7 +24,7 @@
             <div class="triangle-topleft"></div>
         </header>
         <div class="fix-height-header"></div>
-
+    <!-- CONTENT -->
         <div class="flexbox">
             <section><?php $p = (isset($_GET['validate-paragraph'])) ? new generateParagraph($_GET['carac'], $_GET['nb_p']) : new generateParagraph(666, 3); ?></section>
             <aside class="form">
@@ -42,10 +48,18 @@
                 </footer>
             </aside>
         </div>
-
+    <!-- ADD TO DATABASE -->
+        <?php
+        if (isset($_GET['validate-paragraph'])) {
+            $req = SPDO::getInstance()->prepare('INSERT INTO `jokeripsum_counter`(`characters`, `paragraphs`) VALUES (?, ?)');
+            $req->execute(array($_GET['carac'], $_GET['nb_p']));
+        }
+        ?>
+    <!-- ADDITIONAL JAVASCRIPT -->
         <script src="js/animate.css"></script>
         <script src="js/clipboard.min.js"></script>
         <script src="js/copy.js"></script>
+
     </body>
 </html>
 

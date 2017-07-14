@@ -182,6 +182,11 @@ button, .submit {
   font-size: 1.1em;
   font-family: 'Open Sans Condensed', sans-serif;
 
+  &:hover {
+    -ms-transform: rotate(3deg); /* IE 9 */
+    -webkit-transform: rotate(3deg); /* Chrome, Safari, Opera */
+    transform: rotate(3deg);
+  }
 }
 
 button:hover, .submit:hover {
