@@ -1,7 +1,10 @@
 <?php
 
-require 'src/GenerateParagraph.php';
 require 'src/SPDO.php';
+require 'src/GenerateParagraph.php';
+require 'src/CountedChar.php';
+require 'src/CountedPara.php';
+require 'src/AddInDatabase.php';
 
 ?>
 <!doctype html>
@@ -43,18 +46,23 @@ require 'src/SPDO.php';
                     <input type="submit" name="validate-paragraph" class="submit" value="generate">
                 </form>
 
+                <div class="separator"></div>
+
+                <!-- add result into the database and count it -->
+                <h2>Counter !</h2>
+                <?php $add = new addInDatabase(); ?>
+                <p><b><?php $para_counted = new countedPara(); ?></b> paragraphs generated and...</p>
+                <p><b><?php $char_counted = new countedChar(); ?></b> characters counted</p>
+
+                <div class="separator"></div>
+
+                <h2>Credits</h2>
+
                 <footer>
                     <p>Made by <a href="https://www.linkedin.com/in/julienmalle-devweb/" target="_blank">Julien Malle</a> and <a href="https://www.linkedin.com/in/emeraudecaillard/" target="_blank">Emeraude Caillard</a>.</p>
                 </footer>
             </aside>
         </div>
-    <!-- ADD TO DATABASE -->
-        <?php
-        if (isset($_GET['validate-paragraph'])) {
-            $req = SPDO::getInstance()->prepare('INSERT INTO `jokeripsum_counter`(`characters`, `paragraphs`) VALUES (?, ?)');
-            $req->execute(array($_GET['carac'], $_GET['nb_p']));
-        }
-        ?>
     <!-- ADDITIONAL JAVASCRIPT -->
         <script src="js/animate.css"></script>
         <script src="js/clipboard.min.js"></script>

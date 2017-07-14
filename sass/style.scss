@@ -165,6 +165,13 @@ aside {
   padding: 150px 30px 0 30px;
   background-color: $white-o;
   color: $dark-grey;
+
+  .separator {
+    height: 1px;
+    width: 100%;
+    margin: 30px auto;
+    background-color: $red;
+  }
 }
 
 button, .submit {
